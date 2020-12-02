@@ -1,27 +1,27 @@
 
 /*
-* Use the switch statement to select one of many code blocks to be executed.
-*
-*   switch(expression) {
-*       case x:
-*           // code block
-*           break;
-*       case y:
-*           // code block
-*           break;
-*       default:
-*           // code block
-*   }
-*
-*   This is how it works:
-*
-*   - The switch expression is evaluated once
-*   - The value of the expression is compared with the values of each case
-*   - If there is a match, the associated block of code is executed
-*   - The break and default keywords are optional, and will be described later in this chapter
-*   - The default keyword specifies some code to run if there is no case match
-*
-*   The example below uses the weekday number to calculate the weekday name:
+    Use the switch statement to select one of many code blocks to be executed.
+ 
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+    }
+ 
+    This is how it works:
+ 
+    - The switch expression is evaluated once
+    - The value of the expression is compared with the values of each case
+    - If there is a match, the associated block of code is executed
+    - The break and default keywords are optional, and will be described later in this chapter
+    - The default keyword specifies some code to run if there is no case match
+ 
+    The example below uses the weekday number to calculate the weekday name:
 */
 
 #include <iostream>
