@@ -1,8 +1,14 @@
 /* 
     Make a program that reads a 3x3 matrix and creates its transposed matrix.
- */
+    
+    123         147
+    456    ->   258
+    789         369
 
+
+ */
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
@@ -16,7 +22,7 @@ int main(){
                 
                 cout << "\n";
         }
-        
+
         cout << "\n";
 
         for(int i=0; i<3; i++){
@@ -25,5 +31,6 @@ int main(){
                 }
             cout << "\n";
         }
+    getch();
     return 0;
 }
