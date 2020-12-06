@@ -1,0 +1,65 @@
+coleccion de variables
+
+ejemplo un CD de musica
+
+- Titulo
+- Artista
+- Numero de canciones
+- Precio
+- Fecha de compra
+
+struct coleccion_CD {
+    char Titulo[30];
+    char Artista[25];
+    int NumCanciones;
+    float Precio;
+    char Fecha_compra[20];
+};
+
+dos formas de declarar  variables para struct.
+---------------------------------------------------------
+1)
+struct coleccion_CD {
+    char Titulo[30];
+    char Artista[25];
+    int NumCanciones;
+    float Precio;
+    char Fecha_compra[20];
+};
+
+int main(){
+    struct coleccion_CD CD1, CD2, CD3;
+}
+---------------------------------------------------------
+2)
+struct coleccion_CD {
+    char Titulo[30];
+    char Artista[25];
+    int NumCanciones;
+    float Precio;
+    char Fecha_compra[20];
+}CD1, CD2, CD3;
+---------------------------------------------------------
+
+conceptos de estructuras anidadas.
+
+struct inf_direction{
+    char direction[30];
+    char town[20];
+    char providens[20];
+};
+
+struct epployee{
+    char name[20];
+    struct inf_direction dir_employee; // <<<<<<< estructura anidada.
+    double salary;
+};
+
+estructura anidada grafica.
+-------------------------------------------------------
+                      employee
+-------------------------------------------------------
+    name    |        dir_employee       |    salary
+            |direction, town, providens |
+-------------------------------------------------------
+
